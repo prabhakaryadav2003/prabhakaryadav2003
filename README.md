@@ -1,7 +1,7 @@
 # 👋 Hi there ! I'm **Prabhakar Yadav**  
-🚀 **Engineering Student | Tech Enthusiast**
+🚀 **Python | AI and ML Enthusiast**
 
-I am currently pursuing a **Bachelor of Engineering** at Xavier Institute of Engineering, Mumbai (expected graduation: 2026). I am passionate about leveraging technology to solve real-world problems and have hands-on experience in programming, electronics, web, and AI development.
+I am passionate about leveraging technology to solve real-world problems and have hands-on experience in programming, electronics, web, and AI development.
 
 ---
 

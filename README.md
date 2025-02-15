@@ -1,44 +1,47 @@
 # 👋 Hi there ! I'm **Prabhakar Yadav**  
 🚀 **Python | AI and ML Enthusiast**
 
-I am passionate about leveraging technology to solve real-world problems and have hands-on experience in programming, electronics, web, and AI development.
+I am passionate about leveraging technology to solve real-world problems and have hands-on experience in Programming, Electronics, Web, and AI development. I am also certified in Data Analysis and Cybersecurity.
 
 ---
 
 ## 🛠️ Skills  
-### Programming & Software:  
-- **Languages**: Python, HTML, CSS, C  
-- **Specializations**: Django, Machine Learning, Data Analysis
+### Programming:
+- **Languages**:
+  
+  - ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+  - ![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+  - ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+  - ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat&logo=c&logoColor=white)
+- **Specializations**:
+  
+  - ![Django](https://img.shields.io/badge/-Django-092E20?style=flat&logo=django&logoColor=white)
+  - ![Machine Learning](https://img.shields.io/badge/-Machine%20Learning-FF6F00?style=flat&logo=ml&logoColor=white)
+  - ![Data Analysis](https://img.shields.io/badge/-Data%20Analysis-4CAF50?style=flat&logo=data&logoColor=white)
 
 ### Hardware & Embedded Systems:  
 - Proficient in working with **STM32** microcontrollers  
 - Familiar with sensors and control systems for IoT projects
 - **Tools**: LTSpice, KiCAD
 
-## 📚 Projects  
-### 🛠️ Engineering Projects:  
-1. **FM Transmitter**  
-   - Built a FM transmitter circuit as part of a group project.  
-   - *(July 2023 - December 2023)*  
-
-2. **Face Mask Detection AI**  
-   - Built an AI model to detect the presence of face masks in real time using Python.  
-   - *(December 2023 - January 2024)*
-
-3. **Automatic Greenhouse Management System**
-   - Designed a django web app to store and monitor data remotely.
-   - Designed and implemented a smart greenhouse with moisture, temperature, and light sensors.  
-   - Controlled actuators like water pumps and fans to simulate the Indian environment.  
-   - *(January 2024 - March 2024)*
-  
 ## 🌱 Current Interests  
 - Neural Networks
 - Full Stack Web Development
 - Cloud Services  
 - IoT-based Environmental Solutions
 
-## 📈 GitHub Stats  
-![Prabhakar's GitHub stats](https://github-readme-stats.vercel.app/api?username=prabhakaryadav2003&show_icons=true&theme=radical)  
+## 📈 GitHub Stats 
+
+<table align="center">
+    <tr>
+        <td style="padding:10px">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=prabhakaryadav2003&show_icons=true&theme=dark&locale=en&layout=compact" alt="Prabhakar's Top Languages" width="300" />
+        </td>
+        <td>
+            <img src="https://github-readme-stats.vercel.app/api?username=prabhakaryadav2003&show_icons=true&theme=radical" alt="Prabhakar's GitHub Stats" width="400" />
+        </td>
+    </tr>
+</table>
 
 ---
 ## 📫 Let's Connect  

@@ -1,5 +1,5 @@
 # 👋 Hi there ! I'm **Prabhakar Yadav**  
-🚀 **Python | AI and ML Enthusiast**
+**Python | Web Development | AI and ML Enthusiast**
 
 I am passionate about leveraging technology to solve real-world problems and have hands-on experience in Programming, Electronics, Web, and AI development. I am also certified in Data Analysis and Cybersecurity.
 

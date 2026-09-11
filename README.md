@@ -201,10 +201,6 @@ Outside of the web stack I have a background in **electronics and embedded syste
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/calendar.dark.svg" />
-  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/calendar.light.svg" alt="Contribution calendar and current streak" width="46%" />
-</picture>
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/habits.dark.svg" />
   <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/habits.light.svg" alt="Coding habits and most productive time" width="46%" />
 </picture>
@@ -216,8 +212,8 @@ Outside of the web stack I have a background in **electronics and embedded syste
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/contributions.dark.svg" />
-  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/contributions.light.svg" alt="Contribution graph — last 12 months" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/calendar.dark.svg" />
+  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/calendar.light.svg" alt="Contribution calendar — total contributions and current streak" width="62%" />
 </picture>
 
 <br/>

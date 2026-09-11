@@ -152,6 +152,8 @@ jobs:
 
       # ------------------------------------------------------------------
       # CONTRIBUTION CALENDAR  (the classic full-width grid)
+      #    config_display: large  -> 960px wide instead of the default 480px,
+      #                              which is what makes the grid legible.
       #    plugin_calendar_limit: 1  -> last year
       #    plugin_calendar_limit: 0  -> full history, one row per year
       # ------------------------------------------------------------------
@@ -165,6 +167,8 @@ jobs:
           base: ""
           config_timezone: ${{ env.TZ }}
           config_theme: dark
+          config_display: large
+          config_padding: 0, 8%
           plugin_calendar: yes
           plugin_calendar_limit: 1
 
@@ -177,11 +181,16 @@ jobs:
           committer_branch: ${{ env.METRICS_BRANCH }}
           base: ""
           config_timezone: ${{ env.TZ }}
+          config_display: large
+          config_padding: 0, 8%
           plugin_calendar: yes
           plugin_calendar_limit: 1
 
       # ------------------------------------------------------------------
       # RECENT ACTIVITY  (pushes, pull requests, issues, releases)
+      #    Minimal option set — this plugin is the most failure-prone one
+      #    in metrics, and every extra option is another thing that can
+      #    throw. Add options back one at a time if you want more control.
       # ------------------------------------------------------------------
       - name: Recent activity (dark)
         uses: lowlighter/metrics@latest
@@ -195,8 +204,7 @@ jobs:
           config_theme: dark
           plugin_activity: yes
           plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
+          plugin_activity_days: 0
           plugin_activity_visibility: public
 
       - name: Recent activity (light)
@@ -210,6 +218,5 @@ jobs:
           config_timezone: ${{ env.TZ }}
           plugin_activity: yes
           plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
+          plugin_activity_days: 0
           plugin_activity_visibility: public

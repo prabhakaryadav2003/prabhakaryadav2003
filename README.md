@@ -24,12 +24,6 @@
 <a href="https://linkedin.com/in/prabhakaryadav03">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
-<a href="REPLACE_ME_PORTFOLIO_URL">
-  <img src="https://img.shields.io/badge/Portfolio-1F6FEB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-</a>
-<a href="mailto:REPLACE_ME@example.com">
-  <img src="https://img.shields.io/badge/Email-8957E5?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
 
 <br/>
 

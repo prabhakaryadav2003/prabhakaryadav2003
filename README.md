@@ -180,6 +180,13 @@ Outside of the web stack I have a background in **electronics and embedded syste
 
 ## GitHub Statistics
 
+<!--
+  These SVGs are rendered by .github/workflows/metrics.yml and committed
+  to the `metrics` branch of this repository. They are static files —
+  no third-party service is called when the page loads.
+  They will 404 until the workflow has run successfully once.
+-->
+
 <div align="center">
 
 <picture>
@@ -210,14 +217,14 @@ Outside of the web stack I have a background in **electronics and embedded syste
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/contributions.dark.svg" />
-  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/contributions.light.svg" alt="Contribution graph — last 12 months" width="94%" />
+  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/contributions.light.svg" alt="Contribution graph — last 12 months" width="100%" />
 </picture>
 
 <br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/activity.dark.svg" />
-  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/activity.light.svg" alt="Recent contribution activity" width="60%" />
+  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/activity.light.svg" alt="Recent contribution activity" width="56%" />
 </picture>
 
 <br/>

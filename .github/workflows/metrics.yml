@@ -1,0 +1,215 @@
+# .github/workflows/metrics.yml
+#
+# Renders all GitHub statistics as SVG files inside this repository,
+# on the `metrics` branch. Nothing is fetched from a third-party host
+# at page-load time, so the cards cannot rate-limit or go down.
+
+name: Generate Metrics
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      METRICS_USER: prabhakaryadav2003
+      METRICS_BRANCH: metrics
+      TZ: Asia/Kolkata
+
+    steps:
+      # ------------------------------------------------------------------
+      # OVERVIEW  (commits, stars, followers, lines of code)
+      # ------------------------------------------------------------------
+      - name: Overview (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/overview.dark.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: header, repositories
+          config_timezone: ${{ env.TZ }}
+          config_theme: dark
+          plugin_lines: yes
+
+      - name: Overview (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/overview.light.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: header, repositories
+          config_timezone: ${{ env.TZ }}
+          plugin_lines: yes
+
+      # ------------------------------------------------------------------
+      # LANGUAGES  (replaces top-langs card)
+      # ------------------------------------------------------------------
+      - name: Languages (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/languages.dark.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          config_theme: dark
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 1%
+
+      - name: Languages (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/languages.light.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 1%
+
+      # ------------------------------------------------------------------
+      # ISOCALENDAR  (replaces streak + contribution graph)
+      #    Includes total contributions and current streak.
+      # ------------------------------------------------------------------
+      - name: Calendar (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/calendar.dark.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          config_theme: dark
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: Calendar (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/calendar.light.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # ------------------------------------------------------------------
+      # HABITS  (replaces productive-time card)
+      # ------------------------------------------------------------------
+      - name: Habits (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/habits.dark.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          config_theme: dark
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+      - name: Habits (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/habits.light.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+
+      # ------------------------------------------------------------------
+      # CONTRIBUTION CALENDAR  (the classic full-width grid)
+      #    plugin_calendar_limit: 1  -> last year
+      #    plugin_calendar_limit: 0  -> full history, one row per year
+      # ------------------------------------------------------------------
+      - name: Contribution calendar (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/contributions.dark.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          config_theme: dark
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
+
+      - name: Contribution calendar (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/contributions.light.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
+
+      # ------------------------------------------------------------------
+      # RECENT ACTIVITY  (pushes, pull requests, issues, releases)
+      # ------------------------------------------------------------------
+      - name: Recent activity (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/activity.dark.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          config_theme: dark
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_visibility: public
+
+      - name: Recent activity (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ env.METRICS_USER }}
+          filename: metrics/activity.light.svg
+          committer_branch: ${{ env.METRICS_BRANCH }}
+          base: ""
+          config_timezone: ${{ env.TZ }}
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          plugin_activity_visibility: public

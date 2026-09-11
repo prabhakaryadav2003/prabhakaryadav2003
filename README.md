@@ -200,14 +200,6 @@ Outside of the web stack I have a background in **electronics and embedded syste
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=prabhakaryadav2003&bg_color=0D1117&color=C9D1D9&line=1F6FEB&point=8957E5&area=true&area_color=1F6FEB&hide_border=true&custom_title=Contributions%20%E2%80%94%20last%2031%20days" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=prabhakaryadav2003&bg_color=FFFFFF&color=1F2328&line=0969DA&point=8250DF&area=true&area_color=0969DA&hide_border=true&custom_title=Contributions%20%E2%80%94%20last%2031%20days" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=prabhakaryadav2003&theme=github-compact&hide_border=true" alt="Contribution activity graph" />
-</picture>
-
-<br/><br/>
-
 <!--
   SNAKE ANIMATION
 -->

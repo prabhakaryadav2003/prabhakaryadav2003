@@ -198,13 +198,6 @@ Outside of the web stack I have a background in **electronics and embedded syste
   <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/languages.light.svg" alt="Most used languages" width="46%" />
 </picture>
 
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/habits.dark.svg" />
-  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/habits.light.svg" alt="Coding habits and most productive time" width="46%" />
-</picture>
-
 </div>
 
 ## Contribution Activity
@@ -214,13 +207,6 @@ Outside of the web stack I have a background in **electronics and embedded syste
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/calendar.dark.svg" />
   <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/calendar.light.svg" alt="Contribution calendar — total contributions and current streak" width="62%" />
-</picture>
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/activity.dark.svg" />
-  <img src="https://raw.githubusercontent.com/prabhakaryadav2003/prabhakaryadav2003/metrics/metrics/activity.light.svg" alt="Recent contribution activity" width="56%" />
 </picture>
 
 <br/>
